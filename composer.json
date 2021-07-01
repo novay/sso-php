@@ -1,0 +1,20 @@
+{
+    "name": "novay/sso-php",
+    "description": "SSO-Samarinda Client for PHP Language.",
+    "require": {
+        "zefy/php-simple-sso": "^1.0",
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Novay\\SsoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noviyanto Rahmadi",
+            "email": "novay@btekno.id"
+        }
+    ]
+}
