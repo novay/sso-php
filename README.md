@@ -12,17 +12,15 @@ composer require novay/sso-php
 Untuk Login:
 ```php
 <?php
-// Autoloader Composer
+
 require_once __DIR__ . '/vendor/autoload.php';
 
-// Untuk Login
 $properti = [
     'url' => 'https://sso.samarindakota.go.id', 
     'name' => 'XXX', 
     'secret' => 'XXX'
 ];
 
-// Login Script
 $broker = new \Novay\SsoPhp\Services\Broker($properti);
 echo $broker->getLogin();
 
@@ -56,22 +54,21 @@ echo $user['type_id'];
 echo $user['level'];
 
 // Silahkan lakukan penyimpanan session atau pembagian hak akses mandiri kedalam aplikasi client
+// ...
 ```
 
 Untuk Logout:
 ```php
 <?php
-// Autoloader Composer
+
 require_once __DIR__ . '/vendor/autoload.php';
 
-// Untuk Login
 $properti = [
     'url' => 'https://sso.samarindakota.go.id', 
     'name' => 'XXX', 
     'secret' => 'XXX'
 ];
 
-// Login Script
 $broker = new \Novay\SsoPhp\Services\Broker($properti);
 echo $broker->logout();
 
